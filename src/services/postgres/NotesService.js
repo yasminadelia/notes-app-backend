@@ -28,7 +28,7 @@ class NotesService {
     const result = await this._pool.query(query);
 
     if (!result.rows[0].id) {
-      throw new InvariantError('Catatn gagal ditambahkan');
+      throw new InvariantError('Catatan gagal ditambahkan');
     }
 
     return result.rows[0].id;
